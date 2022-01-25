@@ -1,3 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 
+footer {
+  background-color: #353535;
+  width: 100%;
+}
+
+.footer {
+  padding-left: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.footer__Title {
+  color: white;
+  font-size: 26px;
+  font-family: shrikhand, cursive;
+}
+.footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: roboto, sans-serif;
+}
+.footer__icon {
+  width: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

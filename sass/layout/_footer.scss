@@ -1,0 +1,49 @@
+footer{
+    background-color:$footer_bg_color;
+    width: 100%;
+}
+
+.footer {
+
+
+    padding-left: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+
+    &__Title {
+        color: $footer_color;
+        font-size: 26px;
+        font-family: shrikhand, cursive;
+        
+    }
+
+    &__link {
+        color: $footer_color;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: roboto, sans-serif;
+        
+    }
+    
+    &__icon{
+        width: 30px;
+    }
+
+}
+
+//responsive desktop
+
+@media screen and (min-width:992px){
+    .footer{
+        max-width: 1440px;
+        margin:auto;
+
+    }
+
+}
+
+
