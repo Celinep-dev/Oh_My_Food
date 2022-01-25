@@ -10,6 +10,7 @@ footer {
 
 .footer {
   padding-left: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -27,7 +28,7 @@ footer {
   font-family: roboto, sans-serif;
 }
 .footer__icon {
-  width: 20px;
+  width: 30px;
 }
 
 @media screen and (min-width: 992px) {
