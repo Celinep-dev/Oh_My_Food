@@ -1,0 +1,123 @@
+.restaurants{
+    width: 100%;
+    background: $background_ligthgrey;
+    padding: 10px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: auto;
+
+    &__title{
+        margin: 20px 0px 20px 25px;
+        font-size: 24px;
+        font-weight: bold;
+        width:100%;
+        
+    }
+
+}
+
+.card{
+    background-color: white;
+    width:450px;
+    border-radius: 20px;
+    position:relative;
+    text-decoration: none;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 25%);
+    margin-bottom: 20px;
+    transition: filter 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+
+    &__img{
+        object-fit: cover;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+    }
+    &__tag{
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        background: $background-tag;
+        color: $color-tag;
+        padding: 0px 10px 0px 10px;
+    }
+
+    &__body{
+        display:flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    &__info{
+        text-decoration: none;
+        text-align: left;
+        margin: 3px 0px 15px 8px;
+
+        > h3 {
+            margin: 5px 0px 0px 0px;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+
+        > span{
+            
+            font-size: 16px;
+            color: black;
+        }
+        
+    }
+}
+.card__like{
+    font-size: 25px;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    cursor: pointer;
+    
+        
+    .far{
+        
+        font-size: 25px;
+        position: absolute;
+        bottom: 2px;
+        right: 0px;
+        background-clip: text;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .fas{
+        background-image: linear-gradient(162deg $color-secondary 50% $color-primary 100%);
+        transition: opacity 0.3s ease-in-out;
+        background-clip: text;
+        
+    }
+
+    &:hover{
+        filter: brightness(2);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px;
+        transition: color 0.3s ease-in-out;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .restaurants{
+        max-width: auto;   
+    }
+
+    
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 350px;
+        margin: 20px 0px 50px 0px;
+    }
+
+}

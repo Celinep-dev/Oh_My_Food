@@ -164,80 +164,105 @@ body {
 .restaurants {
   width: 100%;
   background: #f6f6f6;
-}
-.restaurants__cards {
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  width: 90%;
-  height: auto;
-  gap: 20px;
-  align-items: flex-start;
-  text-align: start;
-  margin: 0px 0px 50px 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: auto;
 }
 .restaurants__title {
-  margin: 50px 0px 0px 0px;
+  margin: 20px 0px 20px 25px;
   font-size: 24px;
   font-weight: bold;
+  width: 100%;
 }
-.restaurants__card {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
-  cursor: pointer;
-  width: 100%;
+
+.card {
   background-color: white;
-}
-.restaurants__link {
-  text-decoration: none;
-}
-.restaurants__img {
-  width: 100%;
-  height: 150px;
+  width: 450px;
+  border-radius: 20px;
   position: relative;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
+  text-decoration: none;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  transition: filter 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
 }
-.restaurants__tag {
+.card__img {
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+.card__tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background: #99e2d0;
   color: #1b6150;
-  font-weight: bold;
-  width: 100px;
-  height: 30px;
-  text-align: center;
+  padding: 0px 10px 0px 10px;
 }
-.restaurants__info {
-  margin-left: 10px;
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.card__info {
   text-decoration: none;
-  align-items: center;
+  text-align: left;
+  margin: 3px 0px 15px 8px;
 }
-.restaurants__name {
+.card__info > h3 {
   margin: 5px 0px 0px 0px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
 }
-.restaurants__location {
-  margin: 5px 0px 15px 0px;
-  font-size: 14px;
+.card__info > span {
+  font-size: 16px;
   color: black;
 }
-.restaurants__like {
-  position: relative;
+
+.card__like {
+  font-size: 25px;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  cursor: pointer;
+}
+.card__like .far {
+  font-size: 25px;
+  position: absolute;
+  bottom: 2px;
+  right: 0px;
+  background-clip: text;
+  transition: color 0.3s ease-in-out;
+}
+.card__like .fas {
+  background-image: linear-gradient(162deg #FF79DA 50% #9356DC 100%);
+  transition: opacity 0.3s ease-in-out;
+  background-clip: text;
+}
+.card__like:hover {
+  filter: brightness(2);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
   .restaurants {
-    margin: auto;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: auto;
   }
 
-  .cards {
-    width: auto;
+  .card {
+    display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    width: 350px;
+    margin: 20px 0px 50px 0px;
   }
 }
 footer {
