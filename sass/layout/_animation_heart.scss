@@ -1,0 +1,44 @@
+
+.heart{
+    font-size: 25px;
+    padding-top: 20px;
+    width:50px;
+
+    &__empty{
+        color:gray;
+        background-color: white;
+        position: absolute;
+        right: 20px;
+    }
+    &__full{
+        position: absolute;
+        background-clip: text;
+        background: -webkit-linear-gradient($color-primary,$color-secondary);
+        -webkit-background-clip: text;
+        color:transparent;
+        opacity: 0;
+        right: 20px;
+
+
+    }
+
+    &:hover &__full{
+        opacity: 1;
+        animation-name: heart_scale;
+        animation-duration: 1s;
+    }
+
+    &:hover &__empty{
+        color:white;
+    }
+       
+}
+
+@keyframes heart_scale{
+ from{
+    transform: scale(0);
+ }
+ to{
+    transform: scale(1);
+ }
+}
