@@ -69,8 +69,10 @@
 .hero__button{
 
     border: none;
-    width: 250px;
+    
     margin: auto;
+    display: flex;
+    align-items: center;
     padding: 11px 10px;
     border-radius: 100px;
     background: linear-gradient(to top, $color-primary, $color-secondary);
