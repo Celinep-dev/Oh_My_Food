@@ -118,7 +118,7 @@ body {
   text-align: start;
 }
 .functioning_item__number {
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: white;
   border-radius: 100%;
   width: 30px;
@@ -279,7 +279,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #99e2d0;
+  background: #99E2D0;
   color: #1b6150;
   padding: 0px 10px 0px 10px;
 }
@@ -408,7 +408,7 @@ footer {
   text-transform: uppercase;
 }
 .category > span {
-  border-bottom: solid 5px #99e2d0;
+  border-bottom: solid 5px #99E2D0;
 }
 
 .menu {
@@ -450,7 +450,7 @@ footer {
 }
 .menu__icon {
   width: 0;
-  background: #99e2d0;
+  background: #99E2D0;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
   display: flex;

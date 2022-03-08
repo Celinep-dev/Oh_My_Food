@@ -14,7 +14,7 @@
     
     
     > span{
-        border-bottom: solid 5px $background-tag;
+        border-bottom: solid 5px $color-tertiaire;
         
     }
 
@@ -64,7 +64,7 @@
 
     &__icon{
         width: 0;
-        background: $background-tag;
+        background: $color-tertiaire;
         border-radius: 0 15px 15px 0;
         cursor: pointer;
         display: flex;
