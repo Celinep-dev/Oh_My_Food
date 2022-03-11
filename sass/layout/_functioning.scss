@@ -37,11 +37,12 @@
     gap: 20px;
     font-size: 18px;
     font-weight: bold;
+    text-align: start;
 
 
     &__number{
 
-        background-color: #9356dc;
+        background-color: $color-primary;
         color: white;
         border-radius: 100%;
         width: 30px;
@@ -55,13 +56,15 @@
 
     &__icon{
         color: grey;
-        font-size: 24px;
+        font-size: 20px;
+        margin: 0;
     }
 
     &__text{
         font-family: roboto, sans-serif;
         font-size: 18px;
-        margin-left: 30px;
+        /*margin-left: 20px;*/
+       
     }
 
     &:hover{
@@ -81,7 +84,7 @@
 
     .functioning_item {
         width: 420px;
-      
+        
     }
 
 }
