@@ -25,15 +25,15 @@ Ce projet est réalisé selon le cahier des charges prescrit et en utilisant BEM
 * Dans le terminal: Taper npm run sass
 ...
 ### Creation d'une branch GITHUB
-Sur le terminal VSCODE: 
+#### Sur le terminal VSCODE: 
 * Taper git checkout -b (le nom de la branch)
 ...
-Sur l'arborescence VSCODE: 
+#### Sur l'arborescence VSCODE: 
 * Faire un fichier .scss avec le nom de la branch
 ...
 ### Push du commit sur le repertorie GITHUB 
-Sur GITKRAKEN: 
+#### Sur GITKRAKEN: 
 * Cliquer sur stage
 ...
-Sur la branch dans GITKRAKEN:
+#### Sur la branch dans GITKRAKEN:
 * Clique droit puis PUSH 
